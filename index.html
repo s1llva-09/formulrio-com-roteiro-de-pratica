@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesquisa de Satisfação - VM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <img src="imagens/gbanhj1oie9yzcofua8s.png" alt="Logo DataMind Solutions">
+        <h1>VM Solutions</h1>
+    </header>
+
+    <main>
+        <h1>Pesquisa de Satisfação do cliente</h1>
+        <p>Ajude-nos a melhorar nossos serviços respondendo este formulário</p>
+
+        <form>
+            <fieldset>
+                <legend>Dados Pessoais</legend>
+                <label for="name">Nome:</label>
+                <input id="name" type="text" placeholder="Digite seu nome">
+
+                <label for="email">Email:</label>
+                <input id="email" type="email" placeholder="Informe seu email">
+
+                <label for="age">Idade</label>
+                <input id="age" type="number" min="1" max="120">
+            </fieldset>
+
+            <fieldset>
+                <legend>Avaliação</legend>
+
+                <label for="service">Como você avalia nosso atendimento?</label>
+                <input name="service" type="radio">Excelente
+                <input name="service" type="radio">Bom
+                <input name="service" type="radio">Regular
+                <input name="service" type="radio">Ruim
+
+                <label>Quais serviços voce utilizou?</label>
+                <input type="checkbox">Site
+                <input type="checkbox">App
+                <input type="checkbox">Atendimento
+                <input type="checkbox">Entrega
+            </fieldset>
+        </form>
+    </main>
+
+</body>
+</html>
