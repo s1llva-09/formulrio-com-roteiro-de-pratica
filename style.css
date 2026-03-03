@@ -1,3 +1,7 @@
+/* Reset global:
+   - remove margens/paddings padrao
+   - usa box model mais previsivel
+   - define fonte base da pagina */
 * {
     margin: 0;
     padding: 0;
@@ -5,11 +9,15 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Estilo geral da pagina (fundo e cor de texto padrao) */
 body {
     background: #F3F4F6;
     color: #1F2933;
 }
 
+/* Cabecalho:
+   - fundo azul da marca
+   - itens alinhados em linha com espacamento */
 header {
     background-color: #1E3A8A;
     color: white;
@@ -19,16 +27,24 @@ header {
     padding: 20px;
 }
 
+/* Tamanho fixo da logo no cabecalho */
 .logo {
     width: 60px;
 }
 
+/* Area principal:
+   - centraliza o conteudo horizontalmente
+   - cria respiro vertical */
 main {
     display: flex;
     justify-content: center;
     padding: 40px 20px;
 }
 
+/* Card principal do formulario:
+   - fundo branco
+   - largura maxima
+   - bordas arredondadas e sombra */
 .container {
     background: white;
     padding: 30px;
@@ -38,38 +54,47 @@ main {
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
 }
 
+/* Titulo da secao */
 h2 {
     color:#1E3A8A;
     margin-bottom: 10px;
 }
 
+/* Paragrafos com espacamento inferior */
 p {
     margin-bottom: 20px;
 }
 
+/* Formulario em coluna com espacamento entre grupos */
 form {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
+/* Agrupador semantico de campos */
 fieldset {
     padding: 15px;
     border: 1px solid #ccc;
     border-radius: 8px;
 }
 
+/* Titulo do fieldset */
 legend {
     padding: 0 8px;
     font-weight: bold;
     color: #1E3A8A;
 }
 
+/* Labels em bloco para ficar um por linha */
 label {
     display: block;
     margin-top: 10px;
 }
 
+/* Campos de entrada:
+   - ocupam toda largura disponivel
+   - visual padronizado */
 input, select, textarea {
     width: 100%;
     padding: 10px;
@@ -78,18 +103,23 @@ input, select, textarea {
     border-radius: 6px;
 }
 
+/* Grupo de opcoes em linha (ex.: radios/checkboxes) */
 .inline {
     display: flex;
     margin-top: 10px;
     gap: 5px;
 }
 
+/* Container dos botoes de acao:
+   - alinhado a direita
+   - com espacamento entre botoes */
 .botoes {
     display: flex;
     justify-content: flex-end;
     gap: 8px;
 }
 
+/* Botao padrao do formulario */
 button {
     background: #3B82F6;
     color: white;
@@ -100,6 +130,7 @@ button {
     font-size: 16px;
 }
 
+/* Estado hover do botao para feedback visual */
 button:hover {
     background: #1E3A8A;
 }
